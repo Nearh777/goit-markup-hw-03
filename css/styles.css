@@ -37,9 +37,9 @@ body {
   clip-path: inset(50%);
   margin: -1px;
 }
-/* .link {
-  text-decoration: none;
-} */
+.container {
+  width: 1170px;
+}
 
 /* Logo */
 .logo {
@@ -50,13 +50,23 @@ body {
   line-height: 1.19;
   text-decoration: none;
 }
-.logo-web {
+/*.logo-web {
   color: var(--accent-color);
 }
 .logo-studio {
   color: var(--primary-white-color);
-}
+}*/
 /* Site nav  */
+.site-nav {
+  display: flex;
+}
+.site-nav li {
+  outline: 1px solid red;
+}
+
+.auth-nav {
+  display: flex;
+}
 .site-nav .link {
   color: var(--primary-text-color);
   font-weight: 500;
