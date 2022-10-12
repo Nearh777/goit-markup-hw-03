@@ -13,9 +13,10 @@
   --primary-white-color: #ffffff;
   --primary-bg-color: #ffffff;
   --secondary-bg-color: #f5f4fa;
+  --color-btn-primery: #2196f3;
 }
 
-/*p,
+p,
 h1,
 h2,
 h3,
@@ -43,17 +44,24 @@ address {
 a {
   color: currentColor;
   text-decoration: none;
-}*/
+}
+section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 
 body {
   background-color: var(--primary-bg-color);
   color: var(--primary-text-color);
 
   font-family: 'Roboto', sans-serif;
+  
 }
 
 .list {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 .link {
   text-decoration: none;
@@ -72,10 +80,19 @@ body {
   margin: -1px;
 }
 .container {
-width: 1200px;
-padding-left: 15px;
-padding-right: 15px;
-margin: 0 auto;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+/*              header            */
+.page-header {
+  border-bottom: 1px solid #ececec;
+}
+
+.portfolio {
+  margin-bottom: 22px;
 }
 
 /* Logo */
@@ -85,26 +102,31 @@ margin: 0 auto;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
-  text-decoration: none;
 }
+
 
 /* Site nav  */
 .site-nav {
   display: flex;
 }
 
-.contacts-list {
-  display: flex;
-}
-.site-nav .link {
+.site-nav .link {  
+  display: block;
+  padding-top: 25px;
+  padding-bottom: 25px;
+
   color: var(--primary-text-color);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  text-decoration: none;
 }
-
+.site-nav .item + .item {
+  margin-left: 50px;
+}
+/*.site-nav .item:not(:last-child) {
+  margin-right: 50px;
+}*/
 .site-nav .link:hover,
 .site-nav .link:focus {
   color: var(--accent-color);
@@ -113,13 +135,20 @@ margin: 0 auto;
 .site-nav .link.current {
   color: var(--accent-color);
 }
+/*         Contacts          */
+.contacts-list {
+  display: block;
+  display: flex;
+}
+.contacts-list .item + .item {
+  margin-left: 50px;
+} 
 .contacts-list .link {
   color: var(--title-text-color);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  text-decoration: none;
 }
 .contacts-list .link:hover,
 .contacts-list .link:focus {
@@ -128,48 +157,87 @@ margin: 0 auto;
 /* Герой */
 .hero {
   background-color: #2f303a;
+  text-align: center;
+  margin-bottom: 94px;
+  
 }
 .hero-title {
   color: var(--primary-white-color);
-
+  padding-top: 200px;
+  margin-top: 0;
+  padding-bottom: 30px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
-  text-align: center;
   text-transform: uppercase;
 }
 
-.hero-btn {
+.button.hero {
   color: var(--secondary-text-color);
-  background-color: var(--accent-color);
-
+  background-color: var(--color-btn-primery);
+  padding: 10px 32px;  
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
-.hero-btn:hover,
-.hero-btn:focus {
+
+.button.hero:hover,
+.button.hero:focus {
   color: var(--primary-text-color);
   background-color: var(--title-text-color);
 }
+
+/* Button */
+.button {
+  color: var(--primary-text-color);
+  background-color: var(--secondary-bg-color);
+  display: inline-block;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  min-width: 73px;
+  text-align: center;
+  font-family: inherit;
+}
+
+.button.secondary {
+  color: var(--primary-text-color);
+  background-color: var(--secondary-bg-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+}
+
+.button.secondary:hover,
+.button.secondary:focus {
+  color: var(--primary-white-color);
+  background-color: var(--color-btn-primery);
+}
+
 /* Section */
 .section-title {
-  color: var(--primary-text-color);
-
+  margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
+  
 }
 
 /* Переваги */
 
+.feature {
+  margin-bottom: 113px;
+}
+
 .feature-list .title {
   color: var(--primary-text-color);
-
+  margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -184,7 +252,17 @@ margin: 0 auto;
   letter-spacing: 0.03em;
 }
 
+/*          Job             */
+.job {
+  margin-bottom: 56px;
+}
+
 /* Команда */
+
+.team {
+  margin-bottom: 38px;
+}
+
 .team-list .title {
   color: var(--primary-text-color);
 
@@ -199,14 +277,34 @@ margin: 0 auto;
   line-height: 1.19;
 }
 
+.team .title {
+  margin-bottom: 10px;
+}
+.team-img {
+  margin-bottom: 30px;
+}
+
 /* Наші роботи */
 
+.work {
+  margin-bottom: 166px;
+}
+
+.work-btn-list {
+  margin-bottom: 34px;
+}
+
 .work-link {
-  text-decoration: none;
+  text-decoration: none;  
+}
+
+.work-img {
+  margin-bottom: 20px;
 }
 
 .work-title {
   color: var(--primary-text-color);
+  margin-bottom: 4px;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -218,28 +316,8 @@ margin: 0 auto;
 
   line-height: 1.9;
 }
-/* Button */
-.button {
-  color: var(--primary-text-color);
-  background-color: var(--secondary-bg-color);
 
-  font-family: inherit;
-}
-
-
-.button.secondary {
-  color: var(--primary-text-color);
-  background-color: var(--secondary-bg-color);
-
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.63;
-}
-
-.button.secondary:hover,
-.button.secondary:focus {
-  color: var(--accent-color);
-}
+/*               Footer            */
 
 .footer {
   background-color: #2f303a;
@@ -251,7 +329,6 @@ margin: 0 auto;
   font-size: 14px;
   line-height: 1.71;
   font-style: normal;
-  text-decoration: none;
 }
 
 .footer .link:hover,
