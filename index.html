@@ -24,71 +24,71 @@
     <main>
       <!-- Header -->
       <header class="page-header">
-        <div class="container">
-          <nav>
-            <a href="/" class="logo link">WebStudio</a>
-            <ul class="site-nav list">
-              <li class="item"><a href="" class="link current">Студія</a></li>
-              <li class="item"><a href="./portfolio.html" class="link">Портфоліо</a></li>
-              <li class="item"><a href="" class="link">Контакти</a></li>
-            </ul>
-          </nav>
+        <nav class="container main-nav">
+          <a href="/" class="logo link"><span class="web">Web</span><span class="studio">Studio</span></a>
+          <ul class="site-nav list">
+            <li class="item"><a href="" class="link current">Студія</a></li>
+            <li class="item"><a href="./portfolio.html" class="link">Портфоліо</a></li>
+            <li class="item"><a href="" class="link">Контакти</a></li>
+          </ul>
           <ul class="contacts-list list">
             <li class="item">
               <a class="header-email link" href="mailto:info@devstudio.com">info@devstudio.com</a>
             </li>
-            <li class="item"><a class="header-tel link" href="tel:+380961111111">+38 096 111 11 11</a></li>
+            <li class="item">
+              <a class="header-tel link" href="tel:+380961111111">+38 096 111 11 11</a>
+            </li>
           </ul>
-        </div>
+        </nav>
       </header>
       <!-- Hero -->
-      
-        <section class="hero">
-          <div class="container">
-          <h1 class="hero-title">
-            Ефективні рішення для <br />
-            вашого бізнесу
-          </h1>
-          <button class="button hero" type="button">Замовити послугу</button>
-        </div>
+
+      <section class="hero">
+        <h1 class="hero-title">
+          Ефективні рішення для <br />
+          вашого бізнесу
+        </h1>
+        <button class="button hero" type="button">Замовити послугу</button>
       </section>
-      
+
       <!-- Feature -->
-      <section class="feature container">
-        <h2 class="visually-hidden">Наші переваги</h2>
+      <section class="feature">
+        <div class="container">
+          <h2 class="visually-hidden">Наші переваги</h2>
         <ul class="feature-list list">
-          <li>
+          <li class="item">
             <h3 class="title">Увага до деталей</h3>
             <p class="text">
               Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.
             </p>
           </li>
-          <li>
+          <li class="item">
             <h3 class="title">Пунктуальність</h3>
             <p class="text">
               Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.
             </p>
           </li>
-          <li>
+          <li class="item">
             <h3 class="title">Планування</h3>
             <p class="text">Так само консультація з широким активом значною мірою зумовлює.</p>
           </li>
-          <li>
+          <li class="item">
             <h3 class="title">Сучасні технології</h3>
             <p class="text">
               Значимість цих проблем настільки очевидна, що реалізація планових завдань.
             </p>
           </li>
         </ul>
+        </div>
       </section>
       <!--  -->
       <section class="job section">
         <div class="container">
           <h2 class="section-title">Чим ми займаємося</h2>
           <ul class="job-list list">
-            <li><img src="./images/img1.jpg" alt="" width="370" /></li>
-            <li><img src="./images/img2.jpg" alt="" width="370" /></li>
-            <li><img src="./images/img3.jpg" alt="" width="370" /></li>
+            <li class="item"><img src="./images/img1.jpg" alt="" width="370" /></li>
+            <li class="item"><img src="./images/img2.jpg" alt="" width="370" /></li>
+            <li class="item"><img src="./images/img3.jpg" alt="" width="370" /></li>
           </ul>
         </div>
       </section>
@@ -96,22 +96,32 @@
         <div class="container">
           <h2 class="section-title">Наша команда</h2>
           <ul class="team-list list">
-            <li>
-              <img class="team-img" src="./images/img_igor.jpg" alt="Product Designer" width="270" />
+            <li class="item">
+              <img
+                class="team-img"
+                src="./images/img_igor.jpg"
+                alt="Product Designer"
+                width="270"
+              />
               <h3 class="title">Ігор Дем'яненко</h3>
               <p class="text">Product Designer</p>
             </li>
-            <li>
-              <img class="team-img" src="./images/img_olga.jpg" alt="Frontend Developer" width="270" />
+            <li class="item">
+              <img
+                class="team-img"
+                src="./images/img_olga.jpg"
+                alt="Frontend Developer"
+                width="270"
+              />
               <h3 class="title">Ольга Рєпіна</h3>
               <p class="text">Frontend Developer</p>
             </li>
-            <li>
+            <li class="item">
               <img class="team-img" src="./images/img_mikola.jpg" alt="Marketing" width="270" />
               <h3 class="title">Микола Тарасов</h3>
               <p class="text">Marketing</p>
             </li>
-            <li>
+            <li class="item">
               <img class="team-img" src="./images/img_michailo.jpg" alt="UI Designer" width="270" />
               <h3 class="title">Михайло Єрмаков</h3>
               <p class="text">UI Designer</p>
@@ -123,7 +133,7 @@
     <footer class="footer">
       <div class="container">
         <address>
-          <a href="/" class="logo">WebStudio</a>
+          <a href="/" class="logo address"><span class="web">Web</span><span class="studio footer">Studio</span></a>
           <ul class="address-list list">
             <li>
               <a
