@@ -131,7 +131,6 @@ body {
 
 /*    Main-nav     */
 .main-nav {
-  display: block;
   display: flex;
   align-items: center;
 }
@@ -173,7 +172,6 @@ body {
   margin-left: auto;
 }
 .contacts-list {
-  display: block;
   display: flex;
   margin-left: auto;
 }
@@ -181,7 +179,8 @@ body {
   margin-left: 50px;
 }
 .contacts-list .link {
-  display: block;
+  display: flex;
+  margin-left: auto;
   padding-top: 25px;
   padding-bottom: 25px;
   font-weight: 500;
@@ -307,13 +306,12 @@ body {
 }
 
 /* Команда */
-
-
-.container.team {
+.team {
   padding-top: 94px;
   padding-bottom: 94px;
   background-color: #f5f4fa;
 }
+
 .team-list {
   display: flex;
 }
@@ -338,9 +336,14 @@ body {
 .team .title {
   margin-bottom: 10px;
 }
+.team-img {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
 
 /* Наші роботи */
 .work {
+  padding-top: 94px;
   padding-bottom: 94px;
 }
 
