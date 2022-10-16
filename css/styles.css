@@ -353,14 +353,7 @@ body {
 .work-btn-list .item + .item {
   margin-left: 8px;
 }
- .item .work-card { 
-  padding: 20px 24px;
-  border-left: 1px solid #EEEEEE;
-  border-bottom: 1px solid #EEEEEE;
-  border-right: 1px solid #EEEEEE;
-  text-align: left;
 
-}
 .work-title {
   margin-bottom: 4px;
 }
@@ -381,12 +374,10 @@ body {
 .work-link {
   text-decoration: none;
 }
-
-.work .item {
-  border-left: 1px solid #EEEEEE;
-  border-bottom: 1px solid #EEEEEE;
-  border-right: 1px solid #EEEEEE;
+.work-img {
+  display: block;
 }
+
 .work-title {
   color: var(--primary-text-color);
   margin-bottom: 4px;
@@ -402,6 +393,14 @@ body {
   line-height: 1.9;
 }
 
+.work-card { 
+  padding: 20px 24px;
+  border-left: 1px solid #EEEEEE;
+  border-bottom: 1px solid #EEEEEE;
+  border-right: 1px solid #EEEEEE;
+  text-align: left;
+  margin-top: 0;
+}
 /*               Footer            */
 
 .footer {
